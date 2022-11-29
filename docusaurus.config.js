@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
+  title: '寶貝兔牙醫診所',
   tagline: 'Dinosaurs are cool',
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
@@ -71,12 +71,12 @@ const config = {
           {
             label: '醫師團隊',
             position: 'left',
-            to: '/doctor_teams'
+            to: '/doctor_team'
           },
           {
             label: '診療項目',
             position: 'left',
-            to: '/treatment',
+            to: '/blog',
           },
           // {
           //   type: 'doc',
@@ -84,12 +84,11 @@ const config = {
           //   position: 'left',
           //   label: 'Tutorial',
           // },
-          // {to: '/blog', label: 'Blog', position: 'left'},
-          {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
-            position: 'right',
-          },
+          // {
+          //   href: 'https://github.com/facebook/docusaurus',
+          //   label: 'GitHub',
+          //   position: 'right',
+          // },
         ],
       },
       footer: {
@@ -105,37 +104,29 @@ const config = {
             ],
           },
           {
-            title: 'Community',
+            title: '社群經營',
             items: [
               {
-                label: 'Stack Overflow',
+                label: 'Facebook',
                 href: 'https://stackoverflow.com/questions/tagged/docusaurus',
               },
               {
-                label: 'Discord',
+                label: 'Instagram',
                 href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
+              }
             ],
           },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
-              },
-            ],
-          },
+          // {
+          //   title: '更多資訊',
+          //   items: [
+          //     {
+          //       label: '偏鄉醫療',
+          //       to: '/blog',
+          //     }
+          //   ],
+          // },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} 箴雅網站設計工作室`,
       },
       prism: {
         theme: lightCodeTheme,
