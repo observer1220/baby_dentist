@@ -57,19 +57,34 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'My Site',
+        title: '寶貝兔牙醫診所',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
         },
         items: [
           {
-            type: 'doc',
-            docId: 'intro',
+            label: '診所資訊',
             position: 'left',
-            label: 'Tutorial',
+            to: '/clinic_info'
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {
+            label: '醫師團隊',
+            position: 'left',
+            to: '/doctor_teams'
+          },
+          {
+            label: '診療項目',
+            position: 'left',
+            to: '/treatment',
+          },
+          // {
+          //   type: 'doc',
+          //   docId: 'intro',
+          //   position: 'left',
+          //   label: 'Tutorial',
+          // },
+          // {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
