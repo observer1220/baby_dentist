@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: '寶貝兔牙醫診所',
-  tagline: 'Dinosaurs are cool',
+  tagline: '兒牙｜美學｜身障｜植牙中心｜偏遠地區行動醫療',
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -60,7 +60,7 @@ const config = {
         title: '寶貝兔牙醫診所',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          src: 'img/logo.jpg',
         },
         items: [
           {
@@ -107,12 +107,12 @@ const config = {
             title: '社群經營',
             items: [
               {
-                label: 'Facebook',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: '寶貝兔牙醫華夏店',
+                href: 'https://www.facebook.com/babytoothclinic/',
               },
               {
-                label: 'Instagram',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: '寶貝兔牙醫青埔店',
+                href: 'https://www.facebook.com/BABYTOOTH2021/',
               }
             ],
           },
