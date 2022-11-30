@@ -36,15 +36,15 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          // editUrl:
+          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          // editUrl:
+          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -59,7 +59,7 @@ const config = {
       navbar: {
         title: '寶貝兔牙醫診所',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'baby tooth logo',
           src: 'img/logo.jpg',
         },
         items: [
@@ -74,16 +74,16 @@ const config = {
             to: '/doctor_team'
           },
           {
+            type: 'doc',
+            docId: 'intro',
+            position: 'left',
             label: '診療項目',
+          },
+          {
+            label: '偏鄉服務',
             position: 'left',
             to: '/blog',
           },
-          // {
-          //   type: 'doc',
-          //   docId: 'intro',
-          //   position: 'left',
-          //   label: 'Tutorial',
-          // },
           // {
           //   href: 'https://github.com/facebook/docusaurus',
           //   label: 'GitHub',
@@ -98,7 +98,7 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
+                label: '診療項目',
                 to: '/docs/intro',
               },
             ],
@@ -107,26 +107,26 @@ const config = {
             title: '社群經營',
             items: [
               {
-                label: '寶貝兔牙醫華夏店',
+                label: '寶貝兔牙醫診所－華夏店',
                 href: 'https://www.facebook.com/babytoothclinic/',
               },
               {
-                label: '寶貝兔牙醫青埔店',
+                label: '寶貝兔牙醫診所－青埔店',
                 href: 'https://www.facebook.com/BABYTOOTH2021/',
               }
             ],
           },
-          // {
-          //   title: '更多資訊',
-          //   items: [
-          //     {
-          //       label: '偏鄉醫療',
-          //       to: '/blog',
-          //     }
-          //   ],
-          // },
+          {
+            title: '更多資訊',
+            items: [
+              {
+                label: '偏鄉服務',
+                to: '/blog',
+              }
+            ],
+          },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} 箴雅網站設計工作室`,
+        copyright: `Copyright © ${new Date().getFullYear()} 寶貝兔親子牙醫診所－箴雅設計網路工作室`,
       },
       prism: {
         theme: lightCodeTheme,

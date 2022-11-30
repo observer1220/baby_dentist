@@ -1,43 +1,25 @@
 ---
 sidebar_position: 1
+title: Create a page
 ---
 
-# Create a Page
+<!-- # `` -->
 
-Add **Markdown or React** files to `src/pages` to create a **standalone page**:
+<!-- ![](./../../static/img/camp/a-4.jpg) -->
 
-- `src/pages/index.js` → `localhost:3000/`
-- `src/pages/foo.md` → `localhost:3000/foo`
-- `src/pages/foo/bar.js` → `localhost:3000/foo/bar`
+---
 
-## Create your first React Page
+### 入住須知
 
-Create a file at `src/pages/my-react-page.js`:
+- 若需加人請事先告知，每房限加一位大人及一位小孩。
+- 加人需另外依年紀收費。4~11 歲收費$1,200 元；12 歲(含)以上收費$1,500 元；3 歲以下一位不收費。
+- 農曆春節期間，大人收費為$2,000 元。
+- 為確保住客安全及設施完備，本莊園營帳區及客廳區頂棚、陽傘等設備，本莊園有權視風力情況予以解除不予提供。另因應颱風前後，營區設備之解除及組裝，本莊園有權請預訂之客人提前或延期，客人不得異議。
+- 本莊園除導盲犬外，暫不接待寵物。
+- 天候預測如入住日風速超過 30km 以上，建議客人可做延期。
 
-```jsx title="src/pages/my-react-page.js"
-import React from 'react';
-import Layout from '@theme/Layout';
+### 費用包含
 
-export default function MyReactPage() {
-  return (
-    <Layout>
-      <h1>My React page</h1>
-      <p>This is a React page</p>
-    </Layout>
-  );
-}
-```
-
-A new page is now available at [http://localhost:3000/my-react-page](http://localhost:3000/my-react-page).
-
-## Create your first Markdown Page
-
-Create a file at `src/pages/my-markdown-page.md`:
-
-```mdx title="src/pages/my-markdown-page.md"
-# My Markdown page
-
-This is a Markdown page
-```
-
-A new page is now available at [http://localhost:3000/my-markdown-page](http://localhost:3000/my-markdown-page).
+- 贈晨光早餐 & 精緻晚餐
+- 4 人兩帳 帳位平台尺寸 930 x 900cm
+- 提供露營所需帳篷、寢具及盥洗用具

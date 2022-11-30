@@ -3,7 +3,7 @@ import Layout from "@theme/Layout";
 import { Divider } from 'antd';
 import style from './index.module.css';
 
-export default function ClinicInfo () {
+export default function ClinicInfo() {
   return (
     <Layout title={'診所資訊'} description="Description will go into a meta tag in <head />">
       <div className={style.container}>
@@ -21,8 +21,8 @@ export default function ClinicInfo () {
         {/* 診所位置 */}
         <Divider orientation="left">診所位置</Divider>
         <div className={style.location}>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3681.2876520980094!2d120.29979191401405!3d22.68033329414096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e05984fdd1621%3A0xc4b7c00c08dceb48!2z5a-26LKd5YWU6Kaq5a2Q54mZ6Yar6Ki65omA!5e0!3m2!1szh-TW!2stw!4v1669732892436!5m2!1szh-TW!2stw" width="100%" height="400" loading="lazy" referrerpolicy="no-referrer-when-downgrade" />
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.605062840439!2d120.31592987714222!3d22.74291616533703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e0f6613e3a59f%3A0xb371dbe3f13cf0f0!2z5a-26LKd5YWU6Z2S5Z-U6Kaq5a2Q54mZ6Yar6Ki65omA!5e0!3m2!1szh-TW!2stw!4v1669732769708!5m2!1szh-TW!2stw" width="100%" height="400" loading="lazy" referrerpolicy="no-referrer-when-downgrade" />
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3681.2876520980094!2d120.29979191401405!3d22.68033329414096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e05984fdd1621%3A0xc4b7c00c08dceb48!2z5a-26LKd5YWU6Kaq5a2Q54mZ6Yar6Ki65omA!5e0!3m2!1szh-TW!2stw!4v1669732892436!5m2!1szh-TW!2stw" width="100%" height="400" loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.605062840439!2d120.31592987714222!3d22.74291616533703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e0f6613e3a59f%3A0xb371dbe3f13cf0f0!2z5a-26LKd5YWU6Z2S5Z-U6Kaq5a2Q54mZ6Yar6Ki65omA!5e0!3m2!1szh-TW!2stw!4v1669732769708!5m2!1szh-TW!2stw" width="100%" height="400" loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
         </div>
       </div>
 
