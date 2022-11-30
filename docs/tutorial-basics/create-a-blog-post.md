@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: 人工植牙
+description: test
 ---
 
 # Create a Blog Post
