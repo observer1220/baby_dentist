@@ -8,7 +8,7 @@ import { Carousel } from "antd";
 export default function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <Carousel autoplay={true} effect="fade" dotPosition="bottom" easing="liner" autoplaySpeed={5000}>
+    <Carousel autoplay={true} effect="scrollx" dots={false} easing="liner" autoplaySpeed={5000} swipe={true} draggable={true}>
       <div>
         <header className={clsx('hero hero--primary', styles.heroBanner)}>
           <div className="container">
@@ -17,7 +17,7 @@ export default function HomepageHeader() {
             <div className={styles.buttons}>
               <Link
                 className="button button--secondary button--lg"
-                to="/docs/intro">
+                to="/clinic_info#">
                 我要預約 ⏱️
               </Link>
             </div>

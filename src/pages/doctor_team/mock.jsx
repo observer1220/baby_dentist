@@ -27,7 +27,6 @@ export const dataSource = [
     category: "齒顎矯正",
     avator: 'https://images.unsplash.com/photo-1588167056840-13caf6e4562a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80',
     experience: ["高雄榮總牙醫科臨床醫師", "高雄醫學院醫學系畢業"],
-    show: false
   },
   {
     title: "沈明璋",
@@ -35,7 +34,6 @@ export const dataSource = [
     category: "隱適美",
     avator: 'https://images.unsplash.com/photo-1595173425119-1c54835c1874?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
     experience: ["高雄榮總牙醫科臨床醫師"],
-    show: false
   },
   {
     title: "蔡其昌",
@@ -43,6 +41,5 @@ export const dataSource = [
     category: "人工植牙",
     avator: 'https://images.unsplash.com/photo-1601293058843-f34e8dd9ccfd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80',
     experience: ["高雄榮總牙醫科臨床醫師"],
-    show: false
   },
 ];
