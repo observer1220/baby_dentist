@@ -83,7 +83,7 @@ const config = {
             label: '偏鄉服務',
             position: 'left',
             to: '/blog',
-          },
+          }
           // {
           //   href: 'https://github.com/facebook/docusaurus',
           //   label: 'GitHub',
