@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbaby_dentist=self.webpackChunkbaby_dentist||[]).push([[535],{5641:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"\u4e2d\u592e\u5c71\u8108\u5927\u7e31\u8d70\u5317\u4e09\u6bb5 \u80fd\u9ad8\u5b89\u6771\u8ecd\u4f75\u8d70\u7261\u4e39\u6c60","permalink":"/baby_dentist/blog/24013"}]}')}}]);

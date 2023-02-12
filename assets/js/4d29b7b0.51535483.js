@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbaby_dentist=self.webpackChunkbaby_dentist||[]).push([[267],{3349:t=>{t.exports=JSON.parse('{"permalink":"/baby_dentist/blog/tags/\u591a\u65e5\u884c\u7a0b","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

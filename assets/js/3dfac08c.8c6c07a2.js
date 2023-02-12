@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbaby_dentist=self.webpackChunkbaby_dentist||[]).push([[467],{6572:t=>{t.exports=JSON.parse('{"label":"\u591a\u65e5\u884c\u7a0b","permalink":"/baby_dentist/blog/tags/\u591a\u65e5\u884c\u7a0b","allTagsPath":"/baby_dentist/blog/tags","count":1}')}}]);
