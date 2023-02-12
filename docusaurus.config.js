@@ -69,9 +69,14 @@ const config = {
             to: '/clinic_info'
           },
           {
+            label: '門診時間',
+            position: 'left',
+            to: '/work_time',
+          },
+          {
             label: '醫師團隊',
             position: 'left',
-            to: '/doctor_team'
+            to: '/team'
           },
           {
             type: 'doc',
@@ -80,10 +85,10 @@ const config = {
             label: '診療項目',
           },
           {
-            label: '偏鄉服務',
+            label: '山區醫療',
             position: 'left',
             to: '/blog',
-          }
+          },
           // {
           //   href: 'https://github.com/facebook/docusaurus',
           //   label: 'GitHub',
@@ -95,8 +100,20 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: '關於我們',
             items: [
+              {
+                label: '診所資訊',
+                to: '/clinic_info',
+              },
+              {
+                label: '門診時間',
+                to: '/work_time',
+              },
+              {
+                label: '醫師團隊',
+                to: '/team',
+              },
               {
                 label: '診療項目',
                 to: '/docs/intro',
@@ -104,15 +121,15 @@ const config = {
             ],
           },
           {
-            title: '社群經營',
+            title: 'Facebook',
             items: [
               {
-                label: '寶貝兔牙醫診所－華夏店',
-                href: 'https://www.facebook.com/babytoothclinic/',
+                label: '寶貝兔牙醫 華夏店',
+                href: 'https://www.facebook.com/babytoothclinic',
               },
               {
-                label: '寶貝兔牙醫診所－青埔店',
-                href: 'https://www.facebook.com/BABYTOOTH2021/',
+                label: '寶貝兔牙醫 青埔店',
+                href: 'https://www.facebook.com/BABYTOOTH2021',
               }
             ],
           },
@@ -120,11 +137,11 @@ const config = {
             title: '更多資訊',
             items: [
               {
-                label: '偏鄉服務',
+                label: '山區醫療',
                 to: '/blog',
               }
             ],
-          },
+          }
         ],
         copyright: `Copyright © ${new Date().getFullYear()} 寶貝兔親子牙醫診所－箴雅設計網路工作室`,
       },

@@ -3,37 +3,24 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import clsx from "clsx";
 import styles from "./styles.module.css";
 import Link from "@docusaurus/Link";
-import { Carousel } from "antd";
 
-export default function HomepageHeader() {
+export default function HomepageHeader () {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <Carousel autoplay={true} effect="scrollx" dots={false} easing="liner" autoplaySpeed={5000} swipe={true} draggable={true}>
-      <div>
-        <header className={clsx('hero hero--primary', styles.heroBanner)}>
-          <div className="container">
-            <h1 className="hero__title">{siteConfig.title}</h1>
-            <p className="hero__subtitle">{siteConfig.tagline}</p>
-            <div className={styles.buttons}>
-              <Link
-                className="button button--secondary button--lg"
-                to="/clinic_info#">
-                我要預約 ⏱️
-              </Link>
-            </div>
+    <div>
+      <header className={clsx('hero hero--primary', styles.heroBanner)}>
+        <div className="container">
+          <h1 className="hero__title">{siteConfig.title}</h1>
+          <p className="hero__subtitle">{siteConfig.tagline}</p>
+          <div className={styles.buttons}>
+            <Link
+              className="button button--secondary button--lg"
+              to="/work_time">
+              我要預約 ⏱️
+            </Link>
           </div>
-        </header>
-      </div>
-      <div>
-        <h3 className={styles.contentStyle}>
-          Slide 2
-        </h3>
-      </div>
-      <div>
-        <h3 className={styles.contentStyle}>
-          Slide 3
-        </h3>
-      </div>
-    </Carousel>
+        </div>
+      </header>
+    </div>
   );
 }

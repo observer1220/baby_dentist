@@ -1,7 +1,9 @@
+.container {
+  margin: 20px
+}
+
 .contentStyle {
-  height: 250px;
-  color: #fff;
-  line-height: 250px;
-  text-align: center;
-  background: #364d79;
+  width: 100%;
+  height: 510px;
+  object-fit: contain;
 }

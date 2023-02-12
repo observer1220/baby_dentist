@@ -1,0 +1,100 @@
+import React from "react";
+import Layout from "@theme/Layout";
+import { Button, Divider, Space, Table } from 'antd';
+import { columns, BranchHuaSia, BranChingPu } from './mock';
+import style from './index.module.css';
+import { PhoneOutlined, WechatOutlined, GoogleOutlined } from '@ant-design/icons';
+
+export default function ClinicInfo () {
+  return (
+    <Layout
+      title={'診療時間'}
+      description="Description will go into a meta tag in <head />"
+    >
+      <Divider orientation="center">
+        <h2><strong>診療時間</strong></h2>
+      </Divider>
+      <div className={style.container}>
+        <Table
+          className={style.table}
+          title={() =>
+            <>
+              <h3><strong>寶貝兔牙醫 華夏店</strong></h3>
+              <Space>
+                <Button
+                  type="primary"
+                  shape="round"
+                  icon={<PhoneOutlined />}
+                  size='small'
+                  onClick={() => <a href="tel:+886-2-26212220"></a>}
+                >
+                  電話預約
+                </Button>
+                <Button
+                  type="primary"
+                  shape="round"
+                  icon={<WechatOutlined />}
+                  size='small'
+                  onClick={() => { window.open('https://liff.line.me/1645278921-kWRPP32q/?accountId=246uqghw') }}
+                >
+                  Line@預約
+                </Button>
+                <Button
+                  type="primary"
+                  shape="round"
+                  icon={<GoogleOutlined />}
+                  size='small'
+                  onClick={() => { window.open('https://www.google.com/maps?ll=22.680328,120.304019&z=16&t=m&hl=zh-TW&gl=US&mapclient=embed&cid=14175009510092761928') }}
+                >
+                  顯示地圖
+                </Button>
+              </Space>
+            </>
+          }
+          columns={columns}
+          dataSource={BranchHuaSia}
+          pagination={false}
+        />
+        <Table
+          title={() =>
+            <>
+              <h3><strong>寶貝兔牙醫 青埔店</strong></h3>
+              <Space>
+                <Button
+                  type="primary"
+                  shape="round"
+                  icon={<PhoneOutlined />}
+                  size='small'
+                  onClick={() => { window.open('tel:02-2621-2220') }}
+                >
+                  電話預約
+                </Button>
+                <Button
+                  type="primary"
+                  shape="round"
+                  icon={<WechatOutlined />}
+                  size='small'
+                  onClick={() => { window.open('https://liff.line.me/1645278921-kWRPP32q/?accountId=842septt') }}
+                >
+                  Line@預約
+                </Button>
+                <Button
+                  type="primary"
+                  shape="round"
+                  icon={<GoogleOutlined />}
+                  size='small'
+                  onClick={() => { window.open('https://www.google.com/maps?ll=22.743065,120.316756&z=16&t=m&hl=zh-TW&gl=TW&mapclient=embed&cid=12930357777208766704') }}
+                >
+                  顯示地圖
+                </Button>
+              </Space>
+            </>
+          }
+          columns={columns}
+          dataSource={BranChingPu}
+          pagination={false}
+        />
+      </div>
+    </Layout >
+  )
+}
