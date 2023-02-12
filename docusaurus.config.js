@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: '寶貝兔牙醫診所',
   tagline: '兒牙｜美學｜身障｜植牙中心｜偏遠地區行動醫療',
-  url: 'https://github.com/',
+  url: 'https://github.com',
   baseUrl: '/baby_dentist/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
