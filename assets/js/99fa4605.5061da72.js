@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkbaby_dentist=self.webpackChunkbaby_dentist||[]).push([[174],{3769:e=>{e.exports=JSON.parse('{"name":"docusaurus-plugin-content-docs","id":"default"}')}}]);
