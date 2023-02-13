@@ -60,7 +60,7 @@ const config = {
         title: '寶貝兔牙醫診所',
         logo: {
           alt: 'baby tooth logo',
-          src: 'img/logo.jpg',
+          src: 'img/logo.png',
         },
         items: [
           {
@@ -88,12 +88,7 @@ const config = {
             label: '山區醫療',
             position: 'left',
             to: '/blog',
-          },
-          // {
-          //   href: 'https://github.com/facebook/docusaurus',
-          //   label: 'GitHub',
-          //   position: 'right',
-          // },
+          }
         ],
       },
       footer: {
@@ -149,6 +144,9 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
+      colorMode: {
+        disableSwitch: true,
+      }
     }),
 };
 

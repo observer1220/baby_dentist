@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import styles from './styles.module.css';
-import { Avatar, Card, Col, Modal, Row, } from 'antd';
+import { Avatar, Button, Card, Carousel, Col, Modal, Row, } from 'antd';
 import { useEffect } from 'react';
 const { Meta } = Card;
+import Link from "@docusaurus/Link";
 
 const dataSource = [
   {
@@ -63,6 +64,13 @@ export default function HomepageFeatures () {
             );
           })}
         </Row>
+        <div style={{ display: 'flex', justifyContent: 'center', margin: '10px' }}>
+          <Link
+            className="button button--primary button--lg"
+            to="/team">
+            更多資訊
+          </Link>
+        </div>
       </Card>
       <Modal
         title={modalInfo?.title}

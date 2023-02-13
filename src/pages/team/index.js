@@ -15,16 +15,8 @@ const options = [
     value: '兒童牙科',
   },
   {
-    label: '特殊需求者',
-    value: '特殊需求者',
-  },
-  {
     label: '舒眠牙醫',
     value: '舒眠牙醫',
-  },
-  {
-    label: '兒童青少年矯正',
-    value: '兒童青少年矯正',
   },
   {
     label: '早期矯正',
@@ -35,21 +27,41 @@ const options = [
     value: '全口重建',
   },
   {
-    label: '全瓷美學',
-    value: '全瓷美學',
-  },
-  {
     label: '人工植牙',
     value: '人工植牙',
   },
   {
-    label: '牙周治療',
-    value: '牙周治療',
+    label: '全瓷美學',
+    value: '全瓷美學',
   },
   {
-    label: '數位牙科',
-    value: '數位牙科',
-  }
+    label: '牙體復形',
+    value: '牙體復形',
+  },
+  {
+    label: '贗復牙科',
+    value: '贗復牙科',
+  },
+  {
+    label: '特殊需求者',
+    value: '特殊需求者',
+  },
+  {
+    label: '牙周病治療',
+    value: '牙周病治療',
+  },
+  {
+    label: '阻生齒拔除',
+    value: '阻生齒拔除',
+  },
+  {
+    label: '兒童齲齒預防',
+    value: '兒童齲齒預防',
+  },
+  {
+    label: '兒童青少年矯正',
+    value: '兒童青少年矯正',
+  },
 ]
 
 const dataSource = [
@@ -72,7 +84,7 @@ const dataSource = [
     avator: 'https://res.cloudinary.com/dbjxyxxlj/image/upload/v1676094943/doctor/%E6%B4%AA%E7%B6%AD%E6%BE%A4%E9%86%AB%E5%B8%AB_zj1w2b.jpg',
     experience: ["高雄醫學大學牙醫博士班", "高雄醫學大學總住院醫師", "高雄醫學大學牙周病科醫師", "美國紐約大學人工植牙專科醫師",
       "美國紐約大學牙周病科專科醫師", "美國紐約大學人工植牙專科訓練講師", "中華民國口腔植體學會專科醫師", "台灣植牙醫學會專科醫師", "認証PGY牙醫師 訓練導師"],
-    category: ["牙周治療", "人工植牙", "數位牙科"],
+    category: ["牙周病治療", "人工植牙", "數位牙科"],
   },
   {
     title: "王品評醫師",
@@ -115,13 +127,7 @@ const dataSource = [
     avator: 'https://res.cloudinary.com/dbjxyxxlj/image/upload/v1676094943/doctor/%E9%84%AD%E6%83%A0%E6%96%87%E9%86%AB%E5%B8%AB_qrcu9g.jpg',
     experience: ["高雄醫學大學牙醫學學士", "台灣牙周補綴學會會員"],
     category: ["一般牙科", "牙周病治療", "兒童齲齒預防"],
-  },
-  // {
-  //   title: "",
-  //   avator: '',
-  //   experience: [],
-  //   category: [],
-  // },
+  }
 ];
 
 
@@ -148,18 +154,15 @@ export default function DoctorTeam () {
 
   return (
     <Layout title={'醫師團隊'} description="Description will go into a meta tag in <head />">
-      {/* 選擇器 */}
-      {/* <Select defaultValue="全部醫生" style={{ width: 360 }} onChange={handleChange} options={options} /> */}
       {/* <div className={style.radioContainer}>
-        <Radio.Group defaultValue="全部醫生" buttonStyle="solid" onChange={handleChange} size={"large"}>
+        <Radio.Group defaultValue="全部醫生" buttonStyle="solid" onChange={handleChange} size={"middle"}>
           {options.map((item, idx) =>
-            <Radio.Button value={item.value} key={idx}>
+            <Radio value={item.value} key={idx}>
               {item.label}
-            </Radio.Button>
+            </Radio>
           )}
         </Radio.Group>
       </div> */}
-      {/* 全部醫生、齒顎矯正、人工植牙、 */}
       <Card>
         <Row justify={"center"} gutter={[16, 16]}>
           {displayData.map((item, idx) => {

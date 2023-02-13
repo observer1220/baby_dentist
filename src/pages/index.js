@@ -6,6 +6,7 @@ import HomepageHeader from '@site/src/components/HomepageHeader';
 import style from './index.module.css';
 import CarouselComponent from '../components/Carouesl';
 import { Divider } from 'antd';
+import ServiceComponent from '../components/Service';
 
 export default function Home () {
   const { siteConfig } = useDocusaurusContext();
@@ -19,6 +20,7 @@ export default function Home () {
       <Divider orientation="center">
         <h2><strong>診療項目 Services</strong></h2>
       </Divider>
+      <ServiceComponent />
       {/* 醫師團隊 */}
       <Divider orientation="center">
         <h2><strong>專業醫療團隊 Teams</strong></h2>
