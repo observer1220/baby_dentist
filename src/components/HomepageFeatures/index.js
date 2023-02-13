@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styles from './styles.module.css';
-import { Avatar, Card, Modal, } from 'antd';
+import { Avatar, Card, Col, Modal, Row, } from 'antd';
+import { useEffect } from 'react';
 const { Meta } = Card;
 
 const dataSource = [
@@ -28,33 +29,41 @@ const dataSource = [
 ]
 
 export default function HomepageFeatures () {
+  const [loading, setLoading] = useState(true);
+  const [displayData, setDisplayData] = useState(dataSource);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalInfo, setModalInfo] = useState();
+
+  useEffect(() => {
+    setLoading(false);
+  })
+
   return (
     <section className={styles.features}>
-      <div className="container">
-        <div className="row">
-          {dataSource.map((item, idx) => (
-            <Card
-              key={idx}
-              style={{ width: 300, margin: 10 }}
-              hoverable
-              cover={<img
-                src={item.avator}
-                style={{ width: '100%', objectFit: 'contain' }}
-                alt=""
-              />}
-              onClick={() => {
-                setIsModalOpen(true)
-                setModalInfo(item)
-              }}>
-              <Meta
-                title={item.title}
-              />
-            </Card>
-          ))}
-        </div>
-      </div>
+      <Card>
+        <Row justify={"center"} gutter={[16, 16]}>
+          {displayData.map((item, idx) => {
+            return (
+              <Col key={idx}>
+                <Card
+                  className={styles.card}
+                  hoverable
+                  loading={loading}
+                  cover={<img src={item.avator} />}
+                  onClick={() => {
+                    setIsModalOpen(true)
+                    setModalInfo(item)
+                  }}
+                >
+                  <Meta
+                    title={item.title}
+                  />
+                </Card>
+              </Col>
+            );
+          })}
+        </Row>
+      </Card>
       <Modal
         title={modalInfo?.title}
         open={isModalOpen}

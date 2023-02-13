@@ -14,23 +14,24 @@ export default function Home () {
       {/* Banner輪播圖 */}
       <CarouselComponent />
       {/* 立即預約 */}
-      <HomepageHeader />
+      {/* <HomepageHeader /> */}
+      {/* 診療項目 */}
+      <Divider orientation="center">
+        <h2><strong>診療項目 Services</strong></h2>
+      </Divider>
       {/* 醫師團隊 */}
       <Divider orientation="center">
         <h2><strong>專業醫療團隊 Teams</strong></h2>
       </Divider>
       <HomepageFeatures />
-      {/* 診療項目 */}
-      <Divider orientation="center">
-        <h2><strong>診療項目 Services</strong></h2>
-      </Divider>
+
       {/* 案例分享 */}
       <Divider orientation="center">
         <h2><strong>案例分享 Cases</strong></h2>
       </Divider>
 
       {/* YouTube影片 */}
-      <div className={style.container}>
+      {/* <div className={style.container}>
         <iframe
           width="100%"
           height="400"
@@ -39,7 +40,7 @@ export default function Home () {
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         />
-      </div>
+      </div> */}
     </Layout>
   );
 }
