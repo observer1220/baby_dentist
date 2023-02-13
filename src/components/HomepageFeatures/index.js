@@ -1,61 +1,81 @@
-import React from 'react';
-import clsx from 'clsx';
+import React, { useState } from 'react';
 import styles from './styles.module.css';
+import { Avatar, Card, Modal, } from 'antd';
+const { Meta } = Card;
 
-const FeatureList = [
+const dataSource = [
   {
-    title: '唐如青院長',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
-    description: (
-      <>
-        兒童牙醫博士 專家
-      </>
-    ),
+    title: "唐如青院長",
+    avator: 'https://res.cloudinary.com/dbjxyxxlj/image/upload/v1676094943/doctor/%E5%94%90%E5%A6%82%E9%9D%92%E9%86%AB%E5%B8%AB_vnewlv.jpg',
+    experience: ["高雄醫學大學口腔醫學院牙醫學博士", "衛生福利部部定兒童牙科專科醫師", "衛生福利部部定特殊需求找口腔醫學科專科醫師", "高雄醫學大學 兼任助理教授",
+      "隱適美矯正認證醫師", "國際兒童牙科醫學會正式會員", "認證牙醫師牙醫師 訓練導師"],
+    category: ["兒童牙科", "特殊需求者", "舒眠牙醫", "兒童青少年矯正", "早期矯正"],
   },
   {
-    title: '林元婷院長 ',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
-    description: (
-      <>
-        補綴美學專家
-      </>
-    ),
+    title: "林元婷院長",
+    avator: 'https://res.cloudinary.com/dbjxyxxlj/image/upload/v1676094942/doctor/%E6%9E%97%E5%85%83%E5%A9%B7%E9%86%AB%E5%B8%AB_gwulbv.jpg',
+    experience: ["高雄醫學大學牙醫學博士班", "牙周補綴專科醫師", "牙體復形學會會員", "南台灣牙醫植體醫學會會員", "台灣咀嚼吞嚥障礙醫學學會會員",
+      "認證牙醫師牙醫師 訓練導師"],
+    category: ["全口重建", "全瓷美學", "人工植牙"],
   },
   {
-    title: '洪維澤院長',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    description: (
-      <>
-        留美植牙、牙周病專家
-      </>
-    ),
-  },
-];
-
-function Feature ({ Svg, title, description }) {
-  return (
-    <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
-      </div>
-      <div className="text--center padding-horiz--md">
-        <h3>{title}</h3>
-        <p>{description}</p>
-      </div>
-    </div>
-  );
-}
+    title: "洪維澤院長",
+    avator: 'https://res.cloudinary.com/dbjxyxxlj/image/upload/v1676094943/doctor/%E6%B4%AA%E7%B6%AD%E6%BE%A4%E9%86%AB%E5%B8%AB_zj1w2b.jpg',
+    experience: ["高雄醫學大學牙醫博士班", "高雄醫學大學總住院醫師", "高雄醫學大學牙周病科醫師", "美國紐約大學人工植牙專科醫師",
+      "美國紐約大學牙周病科專科醫師", "美國紐約大學人工植牙專科訓練講師", "中華民國口腔植體學會專科醫師", "台灣植牙醫學會專科醫師", "認証PGY牙醫師 訓練導師"],
+    category: ["牙周治療", "人工植牙", "數位牙科"],
+  }
+]
 
 export default function HomepageFeatures () {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalInfo, setModalInfo] = useState();
   return (
     <section className={styles.features}>
       <div className="container">
         <div className="row">
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
+          {dataSource.map((item, idx) => (
+            <Card
+              key={idx}
+              style={{ width: 300, margin: 10 }}
+              hoverable
+              cover={<img
+                src={item.avator}
+                style={{ width: '100%', objectFit: 'contain' }}
+                alt=""
+              />}
+              onClick={() => {
+                setIsModalOpen(true)
+                setModalInfo(item)
+              }}>
+              <Meta
+                title={item.title}
+              />
+            </Card>
           ))}
         </div>
       </div>
+      <Modal
+        title={modalInfo?.title}
+        open={isModalOpen}
+        onCancel={() => { setIsModalOpen(false) }}
+        footer={null}
+      >
+        <strong>學經歷：</strong>
+        <br />
+        <ul>
+          {modalInfo?.experience.map((item, idx) =>
+            <li key={idx}>{item}</li>
+          )}
+        </ul>
+        <strong>專長：</strong>
+        <br />
+        {modalInfo?.category.map((item, idx) =>
+          <span key={idx}>
+            {item}{idx !== modalInfo?.category.length - 1 && <span>、</span>}
+          </span>)
+        }
+      </Modal>
     </section>
   );
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "@theme/Layout";
-import { Button, Divider, Space, Table } from 'antd';
+import { Button, Divider, Space, Table, Tabs } from 'antd';
 import style from './index.module.css';
 import { PhoneOutlined, WechatOutlined, GoogleOutlined } from '@ant-design/icons';
 
@@ -153,15 +153,11 @@ const BranChingPu = [
 ]
 
 export default function ClinicInfo () {
-  return (
-    <Layout
-      title={'診療時間'}
-      description="Description will go into a meta tag in <head />"
-    >
-      <Divider orientation="center">
-        <h2><strong>診療時間</strong></h2>
-      </Divider>
-      <div className={style.container}>
+  const items = [
+    {
+      key: '1',
+      label: '左營華夏店',
+      children: (
         <Table
           className={style.table}
           title={() =>
@@ -202,7 +198,14 @@ export default function ClinicInfo () {
           dataSource={BranchHuaSia}
           pagination={false}
         />
+      )
+    },
+    {
+      key: '2',
+      label: '橋頭青埔店',
+      children: (
         <Table
+          className={style.table}
           title={() =>
             <>
               <h3><strong>寶貝兔牙醫 青埔店</strong></h3>
@@ -240,6 +243,23 @@ export default function ClinicInfo () {
           columns={columns}
           dataSource={BranChingPu}
           pagination={false}
+        />)
+    }
+  ]
+  return (
+    <Layout
+      title={'診療時間'}
+      description="Description will go into a meta tag in <head />"
+    >
+      <Divider orientation="center">
+        <h2><strong>診療時間</strong></h2>
+      </Divider>
+      <div className={style.container}>
+        <Tabs
+          defaultActiveKey="1"
+          type="card"
+          size="middle"
+          items={items}
         />
       </div>
     </Layout >
