@@ -7,6 +7,7 @@ import style from './index.module.css';
 import CarouselComponent from '../components/Carouesl';
 import { Divider } from 'antd';
 import ServiceComponent from '../components/Service';
+import CaseComponent from '../components/Case';
 
 export default function Home () {
   const { siteConfig } = useDocusaurusContext();
@@ -31,6 +32,7 @@ export default function Home () {
       <Divider orientation="center">
         <h2><strong>案例分享 Cases</strong></h2>
       </Divider>
+      <CaseComponent />
 
       {/* YouTube影片 */}
       {/* <div className={style.container}>
