@@ -106,7 +106,7 @@ const config = {
                 to: '/work_time',
               },
               {
-                label: '醫師團隊',
+                label: '醫療團隊',
                 to: '/team',
               },
               {

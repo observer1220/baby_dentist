@@ -62,6 +62,14 @@ export default function CaseComponent () {
           </Link>
         ))}
       </ul>
+      <div style={{ display: 'flex', justifyContent: 'center', margin: '10px' }}>
+        <Link
+          className="button button--primary button--lg"
+        // to="/team"
+        >
+          更多資訊
+        </Link>
+      </div>
     </div>
   );
 }

@@ -47,8 +47,8 @@ export default function ServiceComponent () {
         {dataSource.map((item, idx) => (
           <Link
             to={`/docs/treatment/${item.label}`}>
-            <li key={idx}>
-              <img src={item.url} style={{ width: '300px' }} />
+            <li key={idx} style={{ width: '300px' }}>
+              <img src={item.url} style={{ width: '300px', height: '200px', objectFit: 'cover' }} />
               <span>{item.label}</span>
             </li>
           </Link>
