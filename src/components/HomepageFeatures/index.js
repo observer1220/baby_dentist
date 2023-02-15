@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import styles from './styles.module.css';
-import { Avatar, Button, Card, Carousel, Col, Modal, Row, } from 'antd';
+import { Avatar, Button, Card, Carousel, Col, List, Modal, Row, } from 'antd';
 import { useEffect } from 'react';
 const { Meta } = Card;
 import Link from "@docusaurus/Link";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const dataSource = [
   {
@@ -37,6 +39,8 @@ export default function HomepageFeatures () {
 
   useEffect(() => {
     setLoading(false);
+    AOS.init();
+    AOS.refresh();
   })
 
   return (
@@ -46,20 +50,22 @@ export default function HomepageFeatures () {
           {displayData.map((item, idx) => {
             return (
               <Col key={idx}>
-                <Card
-                  className={styles.card}
-                  hoverable
-                  loading={loading}
-                  cover={<img src={item.avator} />}
-                  onClick={() => {
-                    setIsModalOpen(true)
-                    setModalInfo(item)
-                  }}
-                >
-                  <Meta
-                    title={item.title}
-                  />
-                </Card>
+                <div data-aos="fade-right">
+                  <Card
+                    className={styles.card}
+                    hoverable
+                    loading={loading}
+                    cover={<img src={item.avator} />}
+                    onClick={() => {
+                      setIsModalOpen(true)
+                      setModalInfo(item)
+                    }}
+                  >
+                    <Meta
+                      title={item.title}
+                    />
+                  </Card>
+                </div>
               </Col>
             );
           })}
@@ -93,6 +99,6 @@ export default function HomepageFeatures () {
           </span>)
         }
       </Modal>
-    </section>
+    </section >
   );
 }

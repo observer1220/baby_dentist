@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
@@ -11,6 +11,7 @@ import CaseComponent from '../components/Case';
 
 export default function Home () {
   const { siteConfig } = useDocusaurusContext();
+
   return (
     <Layout title={`${siteConfig.title}`} description="Description will go into a meta tag in <head />">
       {/* Banner輪播圖 */}
@@ -24,10 +25,9 @@ export default function Home () {
       <ServiceComponent />
       {/* 醫師團隊 */}
       <Divider orientation="center">
-        <h2><strong>專業醫療團隊 Teams</strong></h2>
+        <h2><strong>醫療團隊 Teams</strong></h2>
       </Divider>
       <HomepageFeatures />
-
       {/* 案例分享 */}
       <Divider orientation="center">
         <h2><strong>案例分享 Cases</strong></h2>

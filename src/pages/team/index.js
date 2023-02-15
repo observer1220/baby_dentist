@@ -172,7 +172,7 @@ export default function DoctorTeam () {
                   className={style.card}
                   hoverable
                   loading={loading}
-                  cover={<img src={item.avator} style={{ objectFit: 'contain' }} />}
+                  cover={<img src={item.avator} style={{ objectFit: 'cover' }} />}
                   onClick={() => {
                     setIsModalOpen(true)
                     setModalInfo(item)

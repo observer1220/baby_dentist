@@ -1,22 +1,25 @@
-.container ul {
+.container {
   margin: 0 5%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 0;
 }
 
-.container ul a {
+.container a {
   text-decoration: none;
   color: #000;
 }
 
-.container ul li {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.container a :hover {
+  background: #2e8555;
+  color: #fff;
+  transition-duration: 500ms;
+}
+
+.ColStyle {
   margin: 5px;
+  border: 1px solid #eadfdf;
+  text-align: center;
+}
+
+.ColStyle span {
+  font-size: 18px;
   font-weight: 900;
-  border: 1px solid #eaeaea;
-  cursor: pointer;
 }
