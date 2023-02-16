@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: '寶貝兔牙醫診所',
-  tagline: '兒牙｜美學｜身障｜植牙中心｜偏遠地區行動醫療',
+  tagline: '兒牙｜舒眠｜早療｜植牙中心｜偏遠地區行動醫療',
   url: 'https://github.com',
   baseUrl: '/baby_dentist/',
   onBrokenLinks: 'throw',
@@ -63,26 +63,26 @@ const config = {
           src: 'img/logo.png',
         },
         items: [
-          {
-            label: '診所資訊',
-            position: 'left',
-            to: '/clinic_info'
-          },
-          {
-            label: '門診時間',
-            position: 'left',
-            to: '/work_time',
-          },
-          {
-            label: '醫師團隊',
-            position: 'left',
-            to: '/team'
-          },
+          // {
+          //   label: '診所資訊',
+          //   position: 'left',
+          //   to: '/clinic_info'
+          // },
           {
             type: 'doc',
             docId: 'intro',
             position: 'left',
             label: '診療項目',
+          },
+          {
+            label: '醫療團隊',
+            position: 'left',
+            to: '/team'
+          },
+          {
+            label: '門診時間',
+            position: 'left',
+            to: '/work_time',
           },
           {
             label: '山區醫療',
@@ -138,7 +138,7 @@ const config = {
             ],
           }
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} 寶貝兔親子牙醫診所－箴雅設計網路工作室`,
+        copyright: `Copyright © ${new Date().getFullYear()} 寶貝兔親子牙醫診所`,
       },
       prism: {
         theme: lightCodeTheme,

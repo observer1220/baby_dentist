@@ -16,8 +16,6 @@ export default function Home () {
     <Layout title={`${siteConfig.title}`} description="Description will go into a meta tag in <head />">
       {/* Banner輪播圖 */}
       <CarouselComponent />
-      {/* 立即預約 */}
-      {/* <HomepageHeader /> */}
       {/* 診療項目 */}
       <Divider orientation="center">
         <h2><strong>診療項目 Services</strong></h2>
@@ -33,7 +31,8 @@ export default function Home () {
         <h2><strong>案例分享 Cases</strong></h2>
       </Divider>
       <CaseComponent />
-
+      {/* 立即預約 */}
+      {/* <HomepageHeader /> */}
       {/* YouTube影片 */}
       {/* <div className={style.container}>
         <iframe

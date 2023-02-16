@@ -7,12 +7,6 @@
   color: #000;
 }
 
-.container a :hover {
-  background: #2e8555;
-  color: #fff;
-  transition-duration: 500ms;
-}
-
 .ColStyle {
   margin: 5px;
   border: 1px solid #eadfdf;
@@ -22,4 +16,10 @@
 .ColStyle span {
   font-size: 18px;
   font-weight: 900;
+}
+
+.ColStyle:hover {
+  background: #2e8555;
+  color: #fff;
+  transition-duration: 500ms;
 }

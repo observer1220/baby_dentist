@@ -5,6 +5,7 @@ import Link from "@docusaurus/Link";
 import banner1 from '/static/img/index/banner1.jpg'
 import banner2 from '/static/img/index/banner2.jpg'
 import banner3 from '/static/img/index/banner3.jpg'
+import { Col, Row } from "antd";
 
 const dataSource = [
   {
@@ -48,24 +49,25 @@ const dataSource = [
 // Carousel的隱藏API請查閱React-Slick
 export default function CaseComponent () {
   return (
-    <div className={style.container}>
-      <ul>
+    <div>
+      <Row className={style.container}>
         {dataSource.map((item, idx) => (
-          <Link
-          // to={`/docs/treatment/${item.label}`}
-          >
-            <li key={idx} style={{ width: '300px' }}>
-              <img src={item.url} style={{ width: '300px' }} />
-              {/* limit 18 words */}
-              <span>{item.label.length > 18 ? item.label.slice(0, 18) + '...' : item.label}</span>
-            </li>
-          </Link>
+          <Col key={idx} className="gutter-row" xs={12} md={8} lg={6}>
+            <Link
+            // to={`/docs/treatment/${item.label}`}
+            >
+              <div className={style.ColStyle}>
+                <img src={item.url} style={{ width: '300px', objectFit: 'cover' }} />
+                <span>{item.label.length > 18 ? item.label.slice(0, 18) + '...' : item.label}</span>
+              </div>
+            </Link>
+          </Col>
         ))}
-      </ul>
+      </Row>
       <div style={{ display: 'flex', justifyContent: 'center', margin: '10px' }}>
         <Link
           className="button button--primary button--lg"
-        // to="/team"
+        // to="/case"
         >
           更多資訊
         </Link>

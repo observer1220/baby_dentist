@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useState } from "react";
 import Layout from "@theme/Layout";
-import { Card, Col, Row, Select, Radio, Modal } from 'antd';
+import { Card, Col, Row, Select, Radio, Modal, Divider } from 'antd';
 import style from './index.module.css';
 
 const { Meta } = Card;
@@ -154,6 +154,9 @@ export default function DoctorTeam () {
 
   return (
     <Layout title={'醫師團隊'} description="Description will go into a meta tag in <head />">
+      <Divider orientation="center">
+        <h2><strong>醫療團隊 Teams</strong></h2>
+      </Divider>
       {/* <div className={style.radioContainer}>
         <Radio.Group defaultValue="全部醫生" buttonStyle="solid" onChange={handleChange} size={"middle"}>
           {options.map((item, idx) =>
