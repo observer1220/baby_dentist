@@ -63,11 +63,11 @@ const config = {
           src: 'img/logo.png',
         },
         items: [
-          // {
-          //   label: '診所資訊',
-          //   position: 'left',
-          //   to: '/clinic_info'
-          // },
+          {
+            label: '診所資訊',
+            position: 'left',
+            to: '/clinic_info'
+          },
           {
             type: 'doc',
             docId: 'intro',

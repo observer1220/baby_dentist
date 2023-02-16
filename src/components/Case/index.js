@@ -57,7 +57,7 @@ export default function CaseComponent () {
             // to={`/docs/treatment/${item.label}`}
             >
               <div className={style.ColStyle}>
-                <img src={item.url} style={{ width: '300px', objectFit: 'cover' }} />
+                <img src={item.url} style={{ width: '100%', objectFit: 'cover' }} />
                 <span>{item.label.length > 18 ? item.label.slice(0, 18) + '...' : item.label}</span>
               </div>
             </Link>
