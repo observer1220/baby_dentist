@@ -26,7 +26,6 @@ const config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
-
   presets: [
     [
       'classic',
@@ -85,7 +84,7 @@ const config = {
             to: '/work_time',
           },
           {
-            label: '山區醫療',
+            label: '案例分享',
             position: 'left',
             to: '/blog',
           }

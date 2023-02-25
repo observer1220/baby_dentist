@@ -67,7 +67,7 @@ export default function CaseComponent () {
       <div style={{ display: 'flex', justifyContent: 'center', margin: '10px' }}>
         <Link
           className="button button--primary button--lg"
-        // to="/case"
+          to="/blog"
         >
           更多資訊
         </Link>
