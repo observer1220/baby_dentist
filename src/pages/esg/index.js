@@ -2,20 +2,20 @@ import React from "react";
 import Layout from "@theme/Layout";
 import { Divider } from 'antd';
 import style from './index.module.css';
-import ESG1 from '@site/static/img/ESG/1-1_ESG成效.jpg';
-import ESG2 from '@site/static/img/ESG/1-2_ESG成效.jpg';
-import ESG3 from '@site/static/img/ESG/2-1_山區醫療照(不照順序).jpg';
-import ESG4 from '@site/static/img/ESG/2-2_山區醫療照(不照順序).jpg';
-import ESG5 from '@site/static/img/ESG/2-3_山區醫療照(不照順序).jpg';
-import ESG6 from '@site/static/img/ESG/2-4_山區醫療照(不照順序).jpg';
-import ESG7 from '@site/static/img/ESG/2-5_山區醫療照(不照順序).jpg';
-import ESG8 from '@site/static/img/ESG/2-6_山區醫療照(不照順序).jpg';
-import ESG9 from '@site/static/img/ESG/2-7_山區醫療照(不照順序).jpg';
-import ESG10 from '@site/static/img/ESG/2-8_山區醫療照(不照順序).jpg';
-import ESG11 from '@site/static/img/ESG/3-1_安養院醫療照(不照順序).jpg';
-import ESG12 from '@site/static/img/ESG/3-2_安養院醫療照(不照順序).jpg';
-import ESG13 from '@site/static/img/ESG/3-3_安養院醫療照(不照順序).jpg';
-import ESG14 from '@site/static/img/ESG/3-4_安養院醫療照(不照順序).jpg';
+import ESG1 from '@site/static/img/ESG/1-1.jpg';
+import ESG2 from '@site/static/img/ESG/1-2.jpg';
+import ESG3 from '@site/static/img/ESG/2-1.jpg';
+import ESG4 from '@site/static/img/ESG/2-2.jpg';
+import ESG5 from '@site/static/img/ESG/2-3.jpg';
+import ESG6 from '@site/static/img/ESG/2-4.jpg';
+import ESG7 from '@site/static/img/ESG/2-5.jpg';
+import ESG8 from '@site/static/img/ESG/2-6.jpg';
+import ESG9 from '@site/static/img/ESG/2-7.jpg';
+import ESG10 from '@site/static/img/ESG/2-8.jpg';
+import ESG11 from '@site/static/img/ESG/3-1.jpg';
+import ESG12 from '@site/static/img/ESG/3-2.jpg';
+import ESG13 from '@site/static/img/ESG/3-3.jpg';
+import ESG14 from '@site/static/img/ESG/3-4.jpg';
 
 export default function ClinicInfo () {
   return (
