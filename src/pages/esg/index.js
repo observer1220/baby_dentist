@@ -2,20 +2,20 @@ import React from "react";
 import Layout from "@theme/Layout";
 import { Divider } from 'antd';
 import style from './index.module.css';
-import ESG1 from '@site/static/img/ESG/1-1.jpg';
-import ESG2 from '@site/static/img/ESG/1-2.jpg';
-import ESG3 from '@site/static/img/ESG/2-1.jpg';
-import ESG4 from '@site/static/img/ESG/2-2.jpg';
-import ESG5 from '@site/static/img/ESG/2-3.jpg';
-import ESG6 from '@site/static/img/ESG/2-4.jpg';
-import ESG7 from '@site/static/img/ESG/2-5.jpg';
-import ESG8 from '@site/static/img/ESG/2-6.jpg';
-import ESG9 from '@site/static/img/ESG/2-7.jpg';
-import ESG10 from '@site/static/img/ESG/2-8.jpg';
-import ESG11 from '@site/static/img/ESG/3-1.jpg';
-import ESG12 from '@site/static/img/ESG/3-2.jpg';
-import ESG13 from '@site/static/img/ESG/3-3.jpg';
-import ESG14 from '@site/static/img/ESG/3-4.jpg';
+import ESG1 from '@site/static/img/ESG/11.jpg';
+import ESG2 from '@site/static/img/ESG/12.jpg';
+import ESG3 from '@site/static/img/ESG/21.jpg';
+import ESG4 from '@site/static/img/ESG/22.jpg';
+import ESG5 from '@site/static/img/ESG/23.jpg';
+import ESG6 from '@site/static/img/ESG/24.jpg';
+import ESG7 from '@site/static/img/ESG/25.jpg';
+import ESG8 from '@site/static/img/ESG/26.jpg';
+import ESG9 from '@site/static/img/ESG/27.jpg';
+import ESG10 from '@site/static/img/ESG/28.jpg';
+import ESG11 from '@site/static/img/ESG/31.jpg';
+import ESG12 from '@site/static/img/ESG/32.jpg';
+import ESG13 from '@site/static/img/ESG/33.jpg';
+import ESG14 from '@site/static/img/ESG/34.jpg';
 
 export default function ClinicInfo () {
   return (
