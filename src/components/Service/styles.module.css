@@ -9,8 +9,10 @@
 
 .ColStyle {
   margin: 5px;
-  border: 1px solid #eadfdf;
+  border: 1px solid #e3b7a0;
   text-align: center;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .ColStyle span {
@@ -19,7 +21,7 @@
 }
 
 .ColStyle:hover {
-  background: #2e8555;
-  color: #fff;
+  background: #bf9270;
+  color: #ffffff;
   transition-duration: 500ms;
 }

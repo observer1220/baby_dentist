@@ -1,8 +1,7 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
-import HomepageHeader from '@site/src/components/HomepageHeader';
 import style from './index.module.css';
 import CarouselComponent from '../components/Carouesl';
 import { Divider } from 'antd';
@@ -16,9 +15,9 @@ export default function Home () {
     <Layout title={`${siteConfig.title}`} description="Description will go into a meta tag in <head />">
       {/* Banner輪播圖 */}
       <CarouselComponent />
-      {/* 診療項目 */}
+      {/* 美學牙科 */}
       <Divider orientation="center">
-        <h2><strong>診療項目 Services</strong></h2>
+        <h2><strong>美學牙科 Services</strong></h2>
       </Divider>
       <ServiceComponent />
       {/* 醫師團隊 */}
@@ -26,15 +25,15 @@ export default function Home () {
         <h2><strong>醫療團隊 Teams</strong></h2>
       </Divider>
       <HomepageFeatures />
-      {/* 案例分享 */}
+      {/* 我選擇寶貝兔 */}
       <Divider orientation="center">
-        <h2><strong>案例分享 Cases</strong></h2>
+        <h2><strong>顧客滿意見證 Cases</strong></h2>
       </Divider>
       <CaseComponent />
-      {/* 立即預約 */}
-      {/* <HomepageHeader /> */}
-      {/* YouTube影片 */}
-      {/* <div className={style.container}>
+      <Divider orientation="center">
+        <h2><strong>企業責任 ESG</strong></h2>
+      </Divider>
+      <div className={style.container}>
         <iframe
           width="100%"
           height="400"
@@ -43,7 +42,7 @@ export default function Home () {
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         />
-      </div> */}
+      </div>
     </Layout>
   );
 }

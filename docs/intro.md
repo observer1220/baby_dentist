@@ -22,5 +22,3 @@ title: 診所介紹
 行動 是我們的熱情
 
 笑容 是因為您值得
-
-<!-- ![](./../static/img/equipment/1.jpg) -->

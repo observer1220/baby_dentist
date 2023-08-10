@@ -2,10 +2,6 @@ import React from "react";
 import { Carousel } from 'antd';
 import style from "./styles.module.css";
 
-// import banner1 from 'https://res.cloudinary.com/dbjxyxxlj/image/upload/v1677337664/doctor/Banner1_gea8yq.png'
-// import banner2 from 'https://res.cloudinary.com/dbjxyxxlj/image/upload/v1677337664/doctor/Banner2_wmzcla.png'
-// import banner3 from 'https://res.cloudinary.com/dbjxyxxlj/image/upload/v1677337664/doctor/Banner3_suvlh0.png'
-
 const slides = [
   {
     id: 1,

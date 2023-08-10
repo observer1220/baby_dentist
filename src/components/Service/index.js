@@ -1,42 +1,43 @@
 import React from "react";
 import style from "./styles.module.css";
 import Link from "@docusaurus/Link";
-
-import banner1 from '/static/img/index/banner1.jpg'
-import banner2 from '/static/img/index/banner2.jpg'
-import banner3 from '/static/img/index/banner3.jpg'
 import { Col, Row } from "antd";
 
 const dataSource = [
   {
     id: 1,
-    label: '齒顎矯正',
-    url: 'https://www.taipei-arts-dental-clinic.com.tw/Files/Class/203.jpg',
+    label: '美學植牙',
+    url: '/docs/EstheticDentistry/4-1-美學植牙',
   },
   {
     id: 2,
-    label: '牙周病治療',
-    url: 'https://www.taipei-arts-dental-clinic.com.tw/Files/Class/233.jpg',
+    label: '美學瓷牙貼片',
+    url: '/docs/EstheticDentistry/4-2-美學瓷牙貼片',
   },
   {
     id: 3,
-    label: '舒眠牙醫',
-    url: 'https://www.taipei-arts-dental-clinic.com.tw/Files/Class/226.jpg',
+    label: '牙齦整形',
+    url: '/docs/EstheticDentistry/4-3-牙齦整形',
   },
   {
     id: 4,
-    label: '全口重建',
-    url: 'https://www.taipei-arts-dental-clinic.com.tw/Files/Class/199.jpg',
+    label: '牙齒美白',
+    url: '/docs/EstheticDentistry/4-4-牙齒美白',
   },
   {
     id: 5,
-    label: '人工植牙',
-    url: 'https://www.taipei-arts-dental-clinic.com.tw/Files/Class/227.jpg',
+    label: '全口重建',
+    url: '/docs/EstheticDentistry/4-5-全口重建',
   },
   {
     id: 6,
-    label: '兒童齲齒預防',
-    url: 'https://www.taipei-arts-dental-clinic.com.tw/Files/Class/229.jpg',
+    label: '隱適美矯正',
+    url: '/docs/Invisalign/3-1-隱適美矯正',
+  },
+  {
+    id: 7,
+    label: '自鎖性矯正',
+    url: '/docs/Invisalign/3-2-自鎖式矯正',
   },
 ]
 
@@ -47,10 +48,10 @@ export default function ServiceComponent () {
       {dataSource.map((item, idx) => (
         <Col key={idx} className="gutter-row" xs={12} md={8} lg={6}>
           <Link
-            to={`/docs/treatment/${item.label}`}
+            to={item.url}
           >
             <div className={style.ColStyle}>
-              <img src={item.url} style={{ width: '100%', objectFit: 'cover' }} />
+              {/* <img src={item.url} style={{ width: '100%', objectFit: 'cover' }} /> */}
               <span>{item.label}</span>
             </div>
           </Link>
