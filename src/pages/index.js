@@ -8,13 +8,28 @@ import { Divider } from 'antd';
 import ServiceComponent from '../components/Service';
 import CaseComponent from '../components/Case';
 
+const slides = [
+  {
+    id: 1,
+    url: 'https://res.cloudinary.com/dbjxyxxlj/image/upload/v1677337664/doctor/Banner1_gea8yq.png',
+  },
+  {
+    id: 2,
+    url: 'https://res.cloudinary.com/dbjxyxxlj/image/upload/v1677337664/doctor/Banner2_wmzcla.png',
+  },
+  {
+    id: 3,
+    url: 'https://res.cloudinary.com/dbjxyxxlj/image/upload/v1677338123/doctor/Banner3_xjeswr.png',
+  }
+];
+
 export default function Home () {
   const { siteConfig } = useDocusaurusContext();
 
   return (
     <Layout title={`${siteConfig.title}`} description="Description will go into a meta tag in <head />">
       {/* Banner輪播圖 */}
-      <CarouselComponent />
+      <CarouselComponent slides={slides} />
       {/* 美學牙科 */}
       <Divider orientation="center">
         <h2><strong>美學牙科 Services</strong></h2>

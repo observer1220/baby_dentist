@@ -2,29 +2,14 @@ import React from "react";
 import { Carousel } from 'antd';
 import style from "./styles.module.css";
 
-const slides = [
-  {
-    id: 1,
-    url: 'https://res.cloudinary.com/dbjxyxxlj/image/upload/v1677337664/doctor/Banner1_gea8yq.png',
-  },
-  {
-    id: 2,
-    url: 'https://res.cloudinary.com/dbjxyxxlj/image/upload/v1677337664/doctor/Banner2_wmzcla.png',
-  },
-  {
-    id: 3,
-    url: 'https://res.cloudinary.com/dbjxyxxlj/image/upload/v1677338123/doctor/Banner3_xjeswr.png',
-  }
-]
-
 // Carousel的隱藏API請查閱React-Slick
-export default function CarouselComponent () {
+export default function CarouselComponent ({ slides }) {
   return (
     <div className={style.container}>
       <Carousel
         autoplay={true}
         effect="scrollx"
-        dots={false}
+        // dots={false}
         easing="liner"
         autoplaySpeed={5000}
         swipe={true}

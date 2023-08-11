@@ -2,9 +2,6 @@ import React from "react";
 import Layout from "@theme/Layout";
 import { Divider } from 'antd';
 import style from './index.module.css';
-import test1 from '@site/static/img/about/1.jpg';
-import test2 from '@site/static/img/about/2.jpg';
-import test3 from '@site/static/img/about/2.jpg';
 
 export default function ClinicInfo () {
   return (
@@ -42,7 +39,7 @@ export default function ClinicInfo () {
           <h2><strong>專業協同</strong></h2>
         </Divider>
         <div className={style.paragraph}>
-          <img src={test1} />
+          <img src="https://res.cloudinary.com/dbjxyxxlj/image/upload/v1691722747/about_2_bmracz.jpg" />
           <p>診後的精進，是我們呵護患者的日常</p>
           <p>在寶貝兔，我們聚集了牙醫各種專科等醫師陣容群，想要以最高的醫療品質，帶給你完整的口腔照護計畫。</p>
         </div>
@@ -51,7 +48,7 @@ export default function ClinicInfo () {
           <h2><strong>醫病關係</strong></h2>
         </Divider>
         <div className={style.paragraph}>
-          <img src={test2} />
+          <img src="https://res.cloudinary.com/dbjxyxxlj/image/upload/v1691722747/about_1_i8ukwm.jpg" />
           <p>我們想參與在你人生中每個重要的時刻</p>
           <p>We believe that every moment in life is worth celebrating</p>
         </div>
@@ -60,7 +57,7 @@ export default function ClinicInfo () {
           <h2><strong>山區關懷</strong></h2>
         </Divider>
         <div className={style.paragraph}>
-          <img src={test3} />
+          {/* <img src={test2} /> */}
           <p>一起把愛傳遞出去</p>
           <p>We believe that every child deserves a healthy, beautiful smile.</p>
           <p>除了以專業與熱忱照顧著來到診內的小朋友，我們也認真的在執行著山區醫療巡迴，也創下台灣紀錄大幅度的降低山區兒童的齲齒率。</p>
