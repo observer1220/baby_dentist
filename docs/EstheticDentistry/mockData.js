@@ -173,3 +173,54 @@ export const data45 = [
     )
   },
 ]
+
+export const Invisalign42 = [
+  {
+    id: 1,
+    content:
+      "我想要有像明星般很美的笑容，但我天生的牙齒偏偏長度不一、形狀不美、顏色不均... 醫師～ 我還有什麼方法可以改變嗎，難道我一生都沒有機會像明星一樣的笑容了嗎？",
+    image_url:
+      "https://res.cloudinary.com/dbjxyxxlj/image/upload/v1692252136/1692252076774-modified_o5kv0o.png",
+  },
+  {
+    id: 2,
+    content:
+      "對於美有期待的妳請放心，妳的心聲我們都聽到了，透過為妳量身打造的全瓷美學貼片，它可以有效地修復損壞、色澤不佳、形狀不整齊等各種牙齒問題。同時我們也會根據妳的五官、臉型和唇型，為妳打造屬於妳完美的笑容黃金比例！",
+    image_url:
+      "https://res.cloudinary.com/dbjxyxxlj/image/upload/v1692245274/doc_image_tang-modified_1_decymm.webp",
+  },
+];
+
+export const Invisalign43 = [
+  {
+    id: 1,
+    content:
+      "醫師，我是一個愛笑的人，但我的牙齦總是在我笑得最開懷時不小心跑出來跟大家打招呼；每次看到別人幫我拍的照片，總是最害怕牙齦不小心又露出來太多，我總覺得我期待的笑容跟想像中的不一樣，嗚～我到底可以怎麼辦？",
+    image_url:
+      "https://res.cloudinary.com/dbjxyxxlj/image/upload/v1692245274/doc_image_43-modified_1_kgauoz.png",
+  },
+  {
+    id: 2,
+    content:
+      "哈囉，常常笑臉齦人的你，真是辛苦囉！ 當上顎露出過多的牙齦，相對的前牙看起來就會短短的，導致整個微笑曲線跟想像的不一樣，而寶貝兔的牙齦美學計畫可以為你客製化的解決常常笑臉齦人的你！",
+    image_url:
+      "https://res.cloudinary.com/dbjxyxxlj/image/upload/v1692245274/doc_image_lin-modified_1_hzgasg.webp",
+  },
+];
+
+export const Invisalign44 = [
+  {
+    id: 1,
+    content:
+      "醫師，我好羨慕擁有一口白牙漂亮笑容的人，我也經常努力刷牙，但怎麼刷都好黃，我也好想成為人人稱羨擁有潔白牙齒的人...",
+    image_url:
+      "https://res.cloudinary.com/dbjxyxxlj/image/upload/v1692245279/doc_image_44-modified_1_yeselx.png",
+  },
+  {
+    id: 2,
+    content:
+      "對於美總是有更多的期待，這樣的問題常常也在寶貝兔聽到，而我們當然為期待美好沒有限止的妳預備了幾種美白療程囉！",
+    image_url:
+      "https://res.cloudinary.com/dbjxyxxlj/image/upload/v1692245274/doc_image_tang-modified_1_decymm.webp",
+  },
+];

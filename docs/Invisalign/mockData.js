@@ -48,8 +48,6 @@ export const data31 = [
   },
 ]
 
-
-
 export const data32 = [
   {
     children: (
@@ -97,3 +95,22 @@ export const data32 = [
     )
   },
 ]
+
+export const Invisalign31 = [
+  {
+    id: 1,
+    content:
+      "拍照時，我總是酷酷的沒有笑容，不是因為我不愛笑，而是因為從小我的牙齒排列不整齊，以至於每當我露出牙齒時，這會讓我常常感覺到非常的不安及恐懼，深怕我的牙齒會造成讓人不喜歡.....",
+    image_url:
+      "https://res.cloudinary.com/dbjxyxxlj/image/upload/v1692245274/doc_image_31-modified_iapgk8.png",
+  },
+  {
+    id: 2,
+    content:
+      "親愛的你/妳，牙齒的排列不整齊，的確是會造成心理壓力的其中一個原因，而恭喜你找到了寶貝兔，讓我們一起找到最適合你的矯正方式，帶你一步步的邁向全新的自己吧！",
+    image_url:
+      "https://res.cloudinary.com/dbjxyxxlj/image/upload/v1692245274/doc_image_tang-modified_1_decymm.webp",
+  },
+];
+
+// 

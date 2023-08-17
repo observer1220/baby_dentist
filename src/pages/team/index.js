@@ -5,83 +5,24 @@ import style from './index.module.css';
 
 const { Meta } = Card;
 
-const options = [
-  {
-    label: '全部醫生',
-    value: '全部醫生',
-  },
-  {
-    label: '兒童牙科',
-    value: '兒童牙科',
-  },
-  {
-    label: '舒眠牙醫',
-    value: '舒眠牙醫',
-  },
-  {
-    label: '早期矯正',
-    value: '早期矯正',
-  },
-  {
-    label: '全口重建',
-    value: '全口重建',
-  },
-  {
-    label: '人工植牙',
-    value: '人工植牙',
-  },
-  {
-    label: '全瓷美學',
-    value: '全瓷美學',
-  },
-  {
-    label: '牙體復形',
-    value: '牙體復形',
-  },
-  {
-    label: '贗復牙科',
-    value: '贗復牙科',
-  },
-  {
-    label: '特殊需求者',
-    value: '特殊需求者',
-  },
-  {
-    label: '牙周病治療',
-    value: '牙周病治療',
-  },
-  {
-    label: '阻生齒拔除',
-    value: '阻生齒拔除',
-  },
-  {
-    label: '兒童齲齒預防',
-    value: '兒童齲齒預防',
-  },
-  {
-    label: '兒童青少年矯正',
-    value: '兒童青少年矯正',
-  },
-]
-
 const dataSource = [
   {
     title: "唐如青院長",
-    avator: 'https://res.cloudinary.com/dbjxyxxlj/image/upload/v1676094943/doctor/%E5%94%90%E5%A6%82%E9%9D%92%E9%86%AB%E5%B8%AB_vnewlv.jpg',
+    avator: 'https://res.cloudinary.com/dbjxyxxlj/image/upload/v1691722964/doc_image_tang_gwl886.jpg',
     experience: ["高雄醫學大學口腔醫學院牙醫學博士", "衛生福利部部定兒童牙科專科醫師", "衛生福利部部定特殊需求找口腔醫學科專科醫師", "高雄醫學大學 兼任助理教授",
       "隱適美矯正認證醫師", "國際兒童牙科醫學會正式會員", "認證牙醫師牙醫師 訓練導師"],
     category: ["兒童牙科", "特殊需求者", "舒眠牙醫", "兒童青少年矯正", "早期矯正"],
   },
   {
     title: "林元婷院長",
-    avator: 'https://res.cloudinary.com/dbjxyxxlj/image/upload/v1676094942/doctor/%E6%9E%97%E5%85%83%E5%A9%B7%E9%86%AB%E5%B8%AB_gwulbv.jpg',
+    avator: 'https://res.cloudinary.com/dbjxyxxlj/image/upload/v1691722954/doc_image_lin_mj2iur.jpg',
     experience: ["高雄醫學大學牙醫學博士班", "牙周補綴專科醫師", "牙體復形學會會員", "南台灣牙醫植體醫學會會員", "台灣咀嚼吞嚥障礙醫學學會會員",
       "認證牙醫師牙醫師 訓練導師"],
     category: ["全口重建", "全瓷美學", "人工植牙"],
   },
   {
     title: "洪維澤院長",
-    avator: 'https://res.cloudinary.com/dbjxyxxlj/image/upload/v1676094943/doctor/%E6%B4%AA%E7%B6%AD%E6%BE%A4%E9%86%AB%E5%B8%AB_zj1w2b.jpg',
+    avator: 'https://res.cloudinary.com/dbjxyxxlj/image/upload/v1692236984/2-1_%E5%AF%B6%E8%B2%9D%E5%85%94%E9%99%A2%E9%95%B7%E7%85%A7%E7%89%87_hpgn5w.jpg',
     experience: ["高雄醫學大學牙醫博士班", "高雄醫學大學總住院醫師", "高雄醫學大學牙周病科醫師", "美國紐約大學人工植牙專科醫師",
       "美國紐約大學牙周病科專科醫師", "美國紐約大學人工植牙專科訓練講師", "中華民國口腔植體學會專科醫師", "台灣植牙醫學會專科醫師", "認証PGY牙醫師 訓練導師"],
     category: ["牙周病治療", "人工植牙", "數位牙科"],
@@ -153,19 +94,10 @@ export default function DoctorTeam () {
   })
 
   return (
-    <Layout title={'醫師團隊'} description="Description will go into a meta tag in <head />">
+    <Layout title={'寶貝兔醫師團隊'} description="Description will go into a meta tag in <head />">
       <Divider orientation="center">
-        <h2><strong>醫療團隊 Teams</strong></h2>
+        <h2><strong>寶貝兔醫師團隊</strong></h2>
       </Divider>
-      {/* <div className={style.radioContainer}>
-        <Radio.Group defaultValue="全部醫生" buttonStyle="solid" onChange={handleChange} size={"middle"}>
-          {options.map((item, idx) =>
-            <Radio value={item.value} key={idx}>
-              {item.label}
-            </Radio>
-          )}
-        </Radio.Group>
-      </div> */}
       <Card>
         <Row justify={"center"} gutter={[16, 16]}>
           {displayData.map((item, idx) => {
@@ -175,7 +107,7 @@ export default function DoctorTeam () {
                   className={style.card}
                   hoverable
                   loading={loading}
-                  cover={<img src={item.avator} style={{ objectFit: 'cover' }} />}
+                  cover={<img src={item.avator} />}
                   onClick={() => {
                     setIsModalOpen(true)
                     setModalInfo(item)

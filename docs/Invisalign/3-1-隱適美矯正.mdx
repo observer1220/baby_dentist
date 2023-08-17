@@ -6,7 +6,8 @@ description: ""
 
 import Flowchart from "@site/src/components/Flowchart/index.js";
 import Invisalign from "@site/src/components/InvisalignTable/index.js";
-import { data31 } from "./mockData.js";
+import { data31, Invisalign31 } from "./mockData.js";
+import DialogueComponent from "@site/src/components/Dialogue/index.js";
 
 ### 為什麼他們選擇隱適美？
 
@@ -16,25 +17,12 @@ import { data31 } from "./mockData.js";
 
 <Invisalign />
 
-拍照時，我總是酷酷的沒有笑容，不是因為我不愛笑，而是因為從小我的牙齒排列不整齊，以至於每當我露出牙齒時，這會讓我常常感覺到非常的不安及恐懼，深怕我的牙齒會造成讓人不喜歡.....
-
-親愛的你/妳，牙齒的排列不整齊，的確是會造成心理壓力的其中一個原因，而恭喜你找到了寶貝兔，讓我們一起找到最適合你的矯正方式，帶你一步步的邁向全新的自己吧！
-
 <img
-  src={
-    "https://res.cloudinary.com/dbjxyxxlj/image/upload/v1691722952/doc_image_32_lmwtwm.jpg"
-  }
-  alt=""
-  style={{ width: "200px", marginRight: "10px" }}
+  src="https://res.cloudinary.com/dbjxyxxlj/image/upload/v1691722951/doc_image_312_asbqwb.png"
+  alt="隱適美比較表"
 />
 
-<img
-  src={
-    "https://res.cloudinary.com/dbjxyxxlj/image/upload/v1691722954/doc_image_lin_mj2iur.jpg"
-  }
-  alt=""
-  style={{ width: "200px" }}
-/>
+<DialogueComponent dataSource={Invisalign31} />
 
 A healthy, straight smile is an investment in your future.
 

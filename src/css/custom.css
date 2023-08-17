@@ -12,6 +12,20 @@
 #E3B7A0
 #BF9270 */
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #bf9270;
+}
+
+p,
+i {
+  color: #936442;
+}
+
 :root {
   font-family: "Noto Serif TC", "Sans-serif";
   background: #f9f8f8;

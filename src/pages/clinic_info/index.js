@@ -71,38 +71,6 @@ export default function ClinicInfo () {
           <h3>在候診的片刻我們享帶給你不一樣的感受</h3>
           <p>進一步融合空間美學與美食的咖啡廳提供您在候診時、看診後調節的節奏。</p>
         </div>
-
-
-
-
-        {/* 診所位置 */}
-        {/* <Divider orientation="center">
-          <h2><strong>診所位置</strong></h2>
-        </Divider>
-        <div className={style.paragraph}>
-          {info.map((item, idx) =>
-            <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '10px' }}>
-              <ul key={idx}>
-                <li>
-                  <strong>{item.name}</strong>
-                </li>
-                <li >
-                  地址：{item.address}
-                </li>
-                <li >
-                  電話：{item.phone}
-                </li>
-              </ul>
-              <iframe
-                src={item.link}
-                width="50%"
-                height="300"
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              />
-            </div>
-          )}
-        </div> */}
       </div>
     </Layout >
   );

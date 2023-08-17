@@ -8,10 +8,10 @@
 }
 
 .card {
-  width: 330px;
+  width: 300px;
 }
 
 .card img {
-  height: 350px;
+  height: 400px;
   object-fit: cover;
 }

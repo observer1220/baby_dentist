@@ -1,7 +1,3 @@
-.container {
-  margin: 0 5%;
-}
-
 .container a {
   text-decoration: none;
   color: #000;
@@ -9,16 +5,9 @@
 
 .ColStyle {
   margin: 5px;
-  border: 1px solid #e3b7a0;
   text-align: center;
 }
 
-.ColStyle span {
-  font-weight: 900;
-}
-
 .ColStyle:hover {
-  background: #bf9270;
-  color: #ffffff;
   transition-duration: 500ms;
 }

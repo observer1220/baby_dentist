@@ -59,7 +59,7 @@ const config = {
         title: '寶貝兔親子牙醫聯盟',
         logo: {
           alt: 'baby tooth logo',
-          src: 'img/logo.png',
+          src: 'https://res.cloudinary.com/dbjxyxxlj/image/upload/v1692254506/favicon_iecad5.png',
         },
         items: [
           {
@@ -68,20 +68,49 @@ const config = {
             to: '/clinic_info'
           },
           {
-            type: 'doc',
-            docId: 'intro',
+            label: '隱適美矯正',
+            position: 'left',
+            items: [
+              {
+                label: '隱適美矯正',
+                to: '/docs/Invisalign/3-1-隱適美矯正',
+              },
+              {
+                label: '自鎖式矯正',
+                to: '/docs/Invisalign/3-2-自鎖式矯正',
+              }
+            ]
+          },
+          {
             position: 'left',
             label: '美學牙科',
+            items: [
+              {
+                label: '美學植牙',
+                to: '/docs/EstheticDentistry/4-1-美學植牙',
+              },
+              {
+                label: '美學瓷牙貼片',
+                to: '/docs/EstheticDentistry/4-2-美學瓷牙貼片',
+              },
+              {
+                label: '牙齦整形',
+                to: '/docs/EstheticDentistry/4-3-牙齦整形',
+              },
+              {
+                label: '牙齒美白',
+                to: '/docs/EstheticDentistry/4-4-牙齒美白',
+              },
+              {
+                label: '全口重建',
+                to: '/docs/EstheticDentistry/4-5-全口重建',
+              }
+            ]
           },
           {
-            label: '醫療團隊',
+            label: '舒眠鎮靜',
             position: 'left',
-            to: '/team'
-          },
-          {
-            label: '門診時間',
-            position: 'left',
-            to: '/work_time',
+            to: '/docs/舒眠鎮靜'
           },
           {
             label: '我選擇寶貝兔',
@@ -104,6 +133,10 @@ const config = {
               {
                 label: '關於寶貝兔',
                 to: '/clinic_info',
+              },
+              {
+                label: '我選擇寶貝兔',
+                to: '/blog',
               },
               {
                 label: '舒眠鎮靜',

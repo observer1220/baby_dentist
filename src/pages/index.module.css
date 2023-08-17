@@ -1,8 +1,6 @@
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
-
-.container {
-  margin: 0 5%;
+.logoContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 30px;
 }
