@@ -82,7 +82,7 @@ export default function HomepageFeatures () {
         </div>
       </Card>
       <Modal
-        title={modalInfo?.title}
+        title={<h3>{modalInfo?.title}</h3>}
         open={isModalOpen}
         onCancel={() => { setIsModalOpen(false) }}
         footer={null}

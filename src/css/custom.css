@@ -23,7 +23,9 @@ h6 {
 
 p,
 i,
-li {
+li,
+strong,
+span {
   color: #665570;
 }
 
