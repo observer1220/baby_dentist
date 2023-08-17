@@ -21,8 +21,7 @@ const columns = [
     dataIndex: 'invisalign',
     key: 'invisalign',
     align: 'center',
-    width: 135,
-    // render: (text) => <a>{text}</a>,
+    width: 160,
   },
   {
     title: (
@@ -35,21 +34,21 @@ const columns = [
     dataIndex: 'cheap_clear_braces',
     key: 'cheap_clear_braces',
     align: 'center',
-    width: 135,
+    width: 160,
   },
   {
     title: '它牌透明牙套',
     dataIndex: 'transparent_braces',
     key: 'transparent_braces',
     align: 'center',
-    width: 135,
+    width: 160,
   },
   {
     title: '傳統鋼線牙套',
     key: 'traditional_wire_braces',
     dataIndex: 'traditional_wire_braces',
     align: 'center',
-    width: 135,
+    width: 160,
   },
 ];
 
