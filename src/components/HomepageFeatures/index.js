@@ -65,7 +65,7 @@ export default function HomepageFeatures () {
                     }}
                   >
                     <h3>{item.title}</h3>
-                    <p style={{ marginTop: "10px", lineHeight: "2", textIndent: "16px", }}>{item.desc}</p>
+                    <p style={{ marginTop: "10px", lineHeight: "2" }}>{item.desc}</p>
                   </Card>
                 </div>
               </Col>

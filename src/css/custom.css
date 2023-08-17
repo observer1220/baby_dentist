@@ -18,12 +18,13 @@ h3,
 h4,
 h5,
 h6 {
-  color: #bf9270;
+  color: #665570;
 }
 
 p,
-i {
-  color: #936442;
+i,
+li {
+  color: #665570;
 }
 
 :root {

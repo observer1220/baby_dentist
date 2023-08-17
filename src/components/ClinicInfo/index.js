@@ -25,31 +25,27 @@ const dataSource = [
 
 export default function ClinicInfoComponent () {
   return (
-    <div style={{ display: "flex", flexWrap: "wrap", marginBottom: "30px" }}>
+    <Row style={{ marginBottom: "30px" }}>
       {dataSource.map((item, idx) => (
-        <Row key={idx}>
-          <Col
-            style={{ margin: "10px" }}
-            xs={24} sm={24} md={24} lg={12} xl={12}>
-            <ul>
-              <li><h3>{item.label}</h3></li>
-              <li> <p>地址｜{item.address}</p></li>
-              <li><p>電話｜{item.phone}</p></li>
-            </ul>
-            <iframe src={item.map_url}
-              width="600" height="450"
-              style={{ border: 0 }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" />
-            <br />
-            <Link
-              className="button button--primary button--lg"
-              to={item.line_url}
-            >
-              加入寶貝兔{item.line_name}牙醫LINE@
-            </Link>
-          </Col>
-        </Row>
+        <Col key={idx} style={{ margin: "10px" }}
+          xs={24} md={24} lg={11}>
+          <ul>
+            <li><h3>{item.label}</h3></li>
+            <li>地址｜{item.address}</li>
+            <li>電話｜{item.phone}</li>
+          </ul>
+          <iframe src={item.map_url}
+            style={{ width: "100%", height: "450px", border: 0, }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" />
+          <br />
+          <Link
+            className="button button--primary button--lg"
+            to={item.line_url}
+          >
+            加入寶貝兔{item.line_name}牙醫LINE@
+          </Link>
+        </Col>
       ))
       }
-    </div >
+    </Row >
   );
 }
