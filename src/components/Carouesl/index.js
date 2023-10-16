@@ -13,6 +13,7 @@ export default function CarouselComponent ({ slides }) {
       autoplaySpeed={5000}
       swipe={true}
       draggable={true}
+      style={{ width: "100%" }}
     >
       {slides.map((slide, index) => (
         <img className={style.imageStyle} key={index} src={slide.url} />

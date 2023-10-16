@@ -25,24 +25,33 @@ const dataSource = [
 
 export default function ClinicInfoComponent () {
   return (
-    <Row style={{ marginBottom: "30px" }}>
+    <Row style={{ display: 'flex', justifyContent: 'center', marginBottom: "30px" }}>
       {dataSource.map((item, idx) => (
-        <Col key={idx} style={{ margin: "10px" }}
-          xs={24} md={24} lg={11}>
-          <ul>
+        <Col
+          key={idx}
+          xs={24} md={24} lg={11}
+        >
+          <ul style={{ padding: '16px' }}>
             <li><h3>{item.label}</h3></li>
             <li>地址｜{item.address}</li>
             <li>電話｜{item.phone}</li>
+            <li>
+              <iframe src={item.map_url}
+                style={{ width: "100%", height: "450px", border: 0, }}
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              />
+            </li>
+            <li>
+              <Link
+                className="button button--primary button--lg"
+                to={item.line_url}
+              >
+                加入寶貝兔{item.line_name}牙醫LINE@
+              </Link>
+            </li>
           </ul>
-          <iframe src={item.map_url}
-            style={{ width: "100%", height: "450px", border: 0, }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" />
-          <br />
-          <Link
-            className="button button--primary button--lg"
-            to={item.line_url}
-          >
-            加入寶貝兔{item.line_name}牙醫LINE@
-          </Link>
         </Col>
       ))
       }

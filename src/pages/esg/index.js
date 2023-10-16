@@ -92,7 +92,7 @@ export default function ClinicInfo () {
         <div className={style.paragraph}>
           <div style={{ display: "flex", flexWrap: "wrap" }}>
             {excelData.map((slide) => (
-              <img key={slide.id} src={slide.url} alt="slide" style={{ maxWidth: "500px", margin: "10px", objectFit: "contain" }} />
+              <img key={slide.id} src={slide.url} alt="slide" style={{ maxWidth: "500px", width: '100%', margin: "10px", objectFit: "contain" }} />
             ))}
           </div>
           <p>2012年11月「寶貝兔親子牙醫診所」開幕，除了以專業與熱忱照顧來到診內的小朋友，我們的醫師們也都帶著愛心與耐心每週進行醫療巡迴，多年來每週去樟山、寶山、那瑪夏…等偏鄉地區探訪原住民孩童，我們創下台灣紀錄，大幅度降低山區兒童的齲齒率，甚至提前達到WHO 2025年孩童齲齒率的目標。此外，友善身障朋友，去安養院照顧年長者也都是我們所熱衷的。</p>
@@ -108,14 +108,14 @@ export default function ClinicInfo () {
         </Divider>
         <div style={{ display: "flex", flexWrap: "wrap" }}>
           {mountainMedical.map((slide) => (
-            <img key={slide.id} src={slide.url} alt="slide" style={{ maxWidth: "500px", margin: "10px", objectFit: "contain" }} />
+            <img key={slide.id} src={slide.url} alt="slide" style={{ maxWidth: "500px", width: '100%', margin: "10px", objectFit: "contain" }} />
           ))}
         </div>
         <Divider orientation="left">
           <h2><strong>安養院醫療</strong></h2>
         </Divider>
         {nursingData.map((slide) => (
-          <img key={slide.id} src={slide.url} alt="slide" style={{ maxWidth: "500px", margin: "10px", objectFit: "contain" }} />
+          <img key={slide.id} src={slide.url} alt="slide" style={{ maxWidth: "500px", width: '100%', margin: "10px", objectFit: "contain" }} />
         ))}
       </div>
     </Layout >
