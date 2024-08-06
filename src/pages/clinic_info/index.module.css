@@ -1,0 +1,17 @@
+.container {
+  margin: 0 5%;
+}
+
+.paragraph {
+  padding: 0 30px;
+}
+
+.paragraph p {
+  text-indent: 32px;
+  line-height: 2;
+}
+
+li {
+  list-style: none;
+  line-height: 2;
+}

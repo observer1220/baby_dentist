@@ -1,0 +1,13 @@
+.container a {
+  text-decoration: none;
+  color: #000;
+}
+
+.ColStyle {
+  margin: 5px;
+  text-align: center;
+}
+
+.ColStyle:hover {
+  transition-duration: 500ms;
+}

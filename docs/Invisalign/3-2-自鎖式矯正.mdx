@@ -1,0 +1,30 @@
+---
+sidebar_position: 2
+title: 自鎖式矯正
+description: ""
+---
+
+import Flowchart from "@site/src/components/Flowchart/index.js";
+import { data32 } from "./mockData.js";
+import DialogueComponent from "@site/src/components/Dialogue/index.js";
+const dataSource = [
+  {
+    id: 1,
+    content: "什麼是自鎖式矯正？",
+    image_url:
+      "https://res.cloudinary.com/dbjxyxxlj/image/upload/v1692245274/doc_image_32-modified_1_sz2ep0.png",
+  },
+  {
+    id: 2,
+    content:
+      "自鎖式矯正最大的特色在於採取掀蓋設計，改良了傳統矯正器的固定方式，可以快速、有效地矯正牙齒，毋需經常性地調整。此外，我們採用低摩擦力的矯正線，可以讓您減少矯正的不適感，並且更有效地控制矯正力度，達到更好的矯正效果。",
+    image_url:
+      "https://res.cloudinary.com/dbjxyxxlj/image/upload/v1692245274/doc_image_tang-modified_1_decymm.webp",
+  },
+];
+
+<DialogueComponent dataSource={dataSource} />
+
+### 自鎖式矯正流程
+
+<Flowchart data={data32} />

@@ -1,0 +1,56 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+
+/* 網站主視覺配色
+#FFEDDB
+#EDCDBB
+#E3B7A0
+#BF9270 */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #665570;
+}
+
+p,
+i,
+li,
+strong,
+span {
+  color: #665570;
+}
+
+:root {
+  font-family: "Noto Serif TC", "Sans-serif";
+  background: #f9f8f8;
+  --ifm-color-primary: #bf9270;
+  --ifm-color-primary-dark: #b6825b;
+  --ifm-color-primary-darker: #b17a51;
+  --ifm-color-primary-darkest: #936442;
+  --ifm-color-primary-light: #c8a285;
+  --ifm-color-primary-lighter: #cdaa8f;
+  --ifm-color-primary-lightest: #dbc2af;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme="dark"] {
+  --ifm-color-primary: #e3b7a0;
+  --ifm-color-primary-dark: #daa082;
+  --ifm-color-primary-darker: #d69573;
+  --ifm-color-primary-darkest: #c97346;
+  --ifm-color-primary-light: #eccebe;
+  --ifm-color-primary-lighter: #f0d9cd;
+  --ifm-color-primary-lightest: #fdfbfa;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}

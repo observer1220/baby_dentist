@@ -1,0 +1,17 @@
+.radioContainer {
+  width: 80%;
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 300px;
+}
+
+.card img {
+  height: 400px;
+  object-fit: cover;
+}

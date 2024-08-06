@@ -1,0 +1,12 @@
+.feature {
+  background: #f9f8f8;
+}
+
+.card {
+  width: 300px;
+}
+
+.card img {
+  height: 300px;
+  object-fit: contain;
+}
